@@ -3,12 +3,12 @@
   flex-direction: column;
   align-items: center;
 }
-.landing {
+.intro {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.landing__header {
+.intro__header {
   font-family: "Clash Display";
   width: 1068px;
   font-weight: 600;
@@ -16,7 +16,7 @@
   line-height: 1.6;
   text-align: center;
 }
-.landing__text {
+.intro__text {
   width: 926px;
   height: 88px;
   font-family: "Satoshi";
@@ -26,4 +26,40 @@
   line-height: 44px;
   text-align: center;
   color: #292929;
+}
+.carousel {
+  height: 505px;
+  width: 1048px;
+  background-color: #999999;
+}
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: max-content;
+}
+.products__header {
+  width: 395px;
+  height: 65px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 65px;
+}
+hr {
+  width: 1200.06px;
+  border: 0.5px solid #333333;
+}
+.product {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.product__img {
+  width: 610px;
+  height: 305px;
+}
+.product__details {
+  width: 590px;
+  margin: 15px;
 }

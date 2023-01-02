@@ -1,11 +1,5 @@
 :root {
-  --font1: "DM Sans";
-  --font2: "Racing Sans One", cursive;
-  --font3: "STIX Two Text", serif;
-  --heavy-font: 700;
-  --medium-font: 500;
-  --light-font: 400;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Satoshi", sans-serif;
   font-weight: 500;
   line-height: 65px;
   text-align: left;
