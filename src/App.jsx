@@ -1,11 +1,14 @@
 import "./App.css";
-import navbar from "./components/navbar/navbar";
-import home from "./pages/home/home";
-import details from "./pages/details/details";
-import product from "./pages/products/product";
-
+import { Navbar } from "./components";
+import { Auction, Home, Details, Product } from './pages'
+// now isnt this easier :D
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <Navbar />
+      <Auction />
+    </div>
+  )
 }
 
 export default App;
