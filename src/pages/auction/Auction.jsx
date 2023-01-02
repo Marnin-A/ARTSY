@@ -1,6 +1,6 @@
 
 
-const Auction = ()=>{
+export const Auction = ()=>{
     return(
         <div>
             <h1>Auction</h1>
