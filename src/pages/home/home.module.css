@@ -115,16 +115,153 @@ hr {
 }
 .upcoming__header {
   width: 716px;
-  height: 65px;
+  height: 54px;
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
   line-height: 65px;
   text-align: left;
   color: white;
+  margin-top: 25px;
 }
 .arrow3 {
   width: 667px;
   height: 0px;
   border: 0.8px solid #ffffff;
+}
+.upcoming__product {
+  width: 1200px;
+  height: 546px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)),
+    linear-gradient(
+      104.57deg,
+      rgba(0, 0, 0, 0) 21.03%,
+      rgba(0, 0, 0, 0.2) 56.5%,
+      rgba(0, 0, 0, 0.2) 93.84%
+    ),
+    url(aditya-candra-A6Dofq5rVac-unsplash.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 2px solid white;
+}
+.product__details {
+  margin: 50px 50px 50px 50px;
+}
+.product__name {
+  width: 375.88px;
+  height: 66px;
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 29.2313px;
+  line-height: 33px;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: 7% 93%;
+  margin-bottom: 0%;
+}
+.dot {
+  background-color: white;
+  border-radius: 50%;
+  width: 15.97px;
+  height: 15.97px;
+  list-style: none;
+  margin-top: 7px;
+}
+#product__name {
+  list-style: none;
+  margin-left: 10px;
+}
+.number__time {
+  display: flex;
+  align-items: center;
+}
+
+.number {
+  width: 56px;
+  height: 77px;
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 67.6122px;
+  line-height: 77px;
+  text-transform: uppercase;
+  margin-right: 20px;
+  color: #e1e1e1;
+}
+.time {
+  width: 208px;
+  height: 20px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13.46px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.product__info {
+  width: 1100px;
+  display: grid;
+  grid-template-columns: 70% 15% 15%;
+  margin-top: -20px;
+  align-items: center;
+}
+.product__text {
+  width: 628.85px;
+  height: 81.14px;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15.8576px;
+  line-height: 21px;
+  letter-spacing: 0.065em;
+  text-transform: uppercase;
+  margin-left: 75px;
+  color: #ffffff;
+}
+.more {
+  width: 100px;
+  height: 32px;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  text-decoration-line: underline;
+
+  color: #ffffff;
+}
+.reminder {
+  box-sizing: border-box;
+  width: 181px;
+  height: 62px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+}
+.slider__controls {
+  width: 1200px;
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+.slider {
+  justify-self: flex-start;
+}
+.slider__btns {
+  justify-self: flex-end;
+}
+.slider__btn {
+  box-sizing: border-box;
+  border-radius: 50%;
+  margin: 5px;
+  width: 69.71px;
+  height: 69.71px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 7.77035px 7.77035px 11.6555px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(7.77035px);
+  border: 2px solid white;
 }

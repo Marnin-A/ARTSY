@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./home.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Home = () => {
   return (
@@ -109,8 +110,40 @@ export const Home = () => {
         <div className={styles.Uheader__container}>
           <h4 className={styles.upcoming__header}>
             See Upcoming Auctions and Exhibitions
+            <hr className={styles.arrow3} />
           </h4>
-          <hr className={styles.arrow3} />
+        </div>
+        <div className={styles.upcoming__product}>
+          <div className={styles.product__details}>
+            <ul className={styles.product__name}>
+              <li className={styles.dot}></li>
+              <li id={styles.product__name}>MONALISA REDEFINED IN STYLE.</li>
+            </ul>
+            <div className={styles.number__time}>
+              <span className={styles.number}>01</span>
+              <span className={styles.time}>
+                Start on : 08:00 GTS . Monday{" "}
+              </span>
+            </div>
+            <div className={styles.product__info}>
+              <p className={styles.product__text}>
+                GET EXCLUSIVE VIEWING OF CONTEMPORARY ART AND CONNECT WITH
+                INVESTORS AND AUCTIONEERS ACROSS THE WORLD BRINGING THEIR
+                HIGHEST AND LOWEST BIDS.
+              </p>
+              <a className={styles.more} href="#">
+                See more
+              </a>
+              <button className={styles.reminder}> Set a reminder</button>
+            </div>
+          </div>
+        </div>
+        <div className={styles.slider__controls}>
+          <input className={styles.slider} type="range" />
+          <span className={styles.slider__btns}>
+            <button className={styles.slider__btn}></button>
+            <button className={styles.slider__btn}></button>
+          </span>
         </div>
       </section>
       {/* Explore Section */}
