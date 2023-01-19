@@ -23,7 +23,6 @@ export const Home = () => {
           <img src="" alt="" />
         </div>
       </section>
-
       {/* Products section */}
       <section className={styles.products}>
         <h3 className={styles.products__header}>Featured products</h3>
@@ -104,7 +103,6 @@ export const Home = () => {
           </div>
         </div>
       </section>
-
       {/* Upcoming Section */}
       <section className={styles.upcoming}>
         <div className={styles.Uheader__container}>
