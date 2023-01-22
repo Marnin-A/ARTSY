@@ -258,3 +258,50 @@ hr {
   backdrop-filter: blur(0.485646875em);
   border: 2px solid white;
 }
+.explore {
+  margin-top: 15%;
+  margin-bottom: 15%;
+  margin-bottom: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.explore__market {
+  height: max-content;
+  width: 90%;
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.market__text {
+  font-weight: 500;
+  font-size: 3em;
+  line-height: 1.0625em;
+  color: #333333;
+}
+.explore__auctions {
+  height: max-content;
+  width: 90%;
+  border-bottom: 1px solid #333333;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.auctions__text {
+  font-weight: 500;
+  font-size: 3em;
+  line-height: 1.0625em;
+  color: #333333;
+}

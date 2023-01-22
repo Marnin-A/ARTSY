@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "./home.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import styles from "../../styles/home.module.css";
+import BlueArrow from "../../assets/blueArrow.svg";
 
 export const Home = () => {
   return (
@@ -145,7 +145,23 @@ export const Home = () => {
         </div>
       </section>
       {/* Explore Section */}
-      <section className={styles.explore}></section>
+      <section className={styles.explore}>
+        <div className={styles.explore__market}>
+          <span className={styles.market__text}>Explore marketplace</span>
+          <a href="">
+            <img
+              src={BlueArrow}
+              alt="Arrow redirecting you to the marketplace"
+            />
+          </a>
+        </div>
+        <div className={styles.explore__auctions}>
+          <span className={styles.auctions__text}>See auctions </span>
+          <a href="">
+            <img src={BlueArrow} alt="Arrow redirecting you to the auctions" />
+          </a>
+        </div>
+      </section>
       {/* Top Creators Section */}
       <section className={styles.top__creators}></section>
       <footer></footer>
