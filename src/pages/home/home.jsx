@@ -1,8 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Email from "../../assets/email.svg";
 import styles from "../../styles/home.module.css";
 import BlueArrow from "../../assets/blueArrow.svg";
+import Location from "../../assets/locationsvg.svg";
 
 export const Home = () => {
+  const date = new Date();
+  let CurrentYear = date.getFullYear();
   return (
     <div className={styles.home}>
       {/* Intro section*/}
@@ -164,7 +169,78 @@ export const Home = () => {
       </section>
       {/* Top Creators Section */}
       <section className={styles.top__creators}></section>
-      <footer></footer>
+      <footer>
+        <div className={styles.newsletter}>
+          <h2 className={styles.newsletter__header}>NEWSLETTER</h2>
+          <div className={styles.newsletter__text}>
+            Subscribe to get daily updates on new drops & exciting deals{" "}
+          </div>
+          <div className={styles.newsletter__input}>
+            <input
+              type="text"
+              name=""
+              id={styles.newsletter__input}
+              placeholder="ENTER YOUR EMAIL"
+            />
+            <button className={styles.newsletter__btn}>SUBSCRIBE</button>
+          </div>
+        </div>
+        <div className={styles.footer__bottom}>
+          <div id={styles.footer__logo}>ARTSY.</div>
+          <div id={styles.footer__nav}>
+            <Link className={styles.ftr__nav__item} href="/home">
+              Home
+            </Link>
+            <Link className={styles.ftr__nav__item} href="/blog">
+              Blog
+            </Link>
+            <Link className={styles.ftr__nav__item} href="/market">
+              Marketplace
+            </Link>
+            <Link className={styles.ftr__nav__item} href="/wallets">
+              Wallets
+            </Link>
+            <Link className={styles.ftr__nav__item} href="/auctions">
+              Auctions
+            </Link>
+            <Link className={styles.ftr__nav__item} href="/rates">
+              Rates
+            </Link>
+            <Link className={styles.ftr__nav__item} href="/drops">
+              Drops
+            </Link>
+            <Link className={styles.ftr__nav__item} href="/high-bids">
+              High bids
+            </Link>
+          </div>
+          <div id={styles.footer__contacts}>
+            <div id={styles.email}>
+              <img class={styles.contacts__img} src={Email} alt="" />
+              <Link
+                class={styles.contacts__link}
+                href="mailto:artsystudios@gmail.com"
+              >
+                artsystudios@gmail.com
+              </Link>
+            </div>
+            <div id={styles.location}>
+              <img class={styles.contacts__img} src={Location} alt="" />
+              <Link
+                class={styles.contacts__link}
+                to="https://maps.google.com"
+                target="_blank"
+              >
+                Lagos, Nigeria.
+              </Link>
+            </div>
+          </div>
+        </div>
+        {/* Copyright */}
+
+        <div className={styles.copyright}>
+          Artsystudios © {CurrentYear}. All Rights Reserved.
+        </div>
+      </footer>
     </div>
   );
 };

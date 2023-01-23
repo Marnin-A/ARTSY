@@ -305,3 +305,141 @@ hr {
   line-height: 1.0625em;
   color: #333333;
 }
+.top__creators {
+  height: 100vh;
+  width: 100%;
+  background-color: #292929;
+}
+footer {
+  width: 100%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.newsletter {
+  border: 1px solid #292929;
+  width: 97%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.newsletter__header {
+  font-family: "san-serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30.2105px;
+  line-height: 39px;
+  text-transform: uppercase;
+  color: #333333;
+}
+.newsletter__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 43px;
+  color: #333333;
+}
+.newsletter__input {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+}
+#newsletter__input {
+  font-family: "san-serif";
+  height: 3.75em;
+  width: 31%;
+  border: 1px solid #333333;
+  text-align: center;
+  margin-right: 1.5%;
+}
+.newsletter__btn {
+  font-family: "san-serif";
+  width: 11.351875em;
+  height: 4.09em;
+  box-sizing: border-box;
+  color: #ffffff;
+  background: #272727;
+  border: 1px solid #333333;
+}
+.footer__bottom {
+  margin-top: 3%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+#footer__logo {
+  width: 30%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Clash Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3em;
+  color: #292929;
+}
+#footer__nav {
+  width: 33.33%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.ftr__nav__item {
+  margin: 1em;
+  color: #272727;
+  text-decoration: none;
+  text-align: center;
+}
+.ftr__nav__item:hover {
+  text-shadow: 0.2px 0.2px #686666;
+}
+.ftr__nav__item:visited {
+  color: #918e8e;
+}
+.footer__contacts {
+  width: 36.66%;
+}
+#email {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 35px;
+  color: #333333;
+  display: flex;
+  margin-top: 6%;
+  margin-bottom: 15%;
+}
+#location {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 35px;
+  color: #333333;
+  display: flex;
+  flex-direction: row;
+}
+.contacts__img {
+  margin-right: 5%;
+}
+.contacts__link {
+  text-decoration: none;
+  color: #333333;
+}
+.copyright {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5em;
+  line-height: 88%;
+  letter-spacing: -0.02em;
+  color: #333333;
+  opacity: 0.5;
+  margin-top: 4%;
+  margin-bottom: 1%;
+}
