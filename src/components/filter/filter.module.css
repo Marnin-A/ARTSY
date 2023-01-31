@@ -1,6 +1,13 @@
+.filter {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .search_bar {
   display: flex;
   flex-direction: row;
+  align-items: center;
   width: 13.4375em;
   height: 2em;
   border-radius: 0.5em;
@@ -9,4 +16,18 @@
 #search {
   height: 2em;
   border: none;
+  outline: none;
+  background: #f4f2f2;
+  width: 70%;
+}
+
+#filter_img {
+  width: 1em;
+}
+.categories {
+  margin-top: 15%;
+  width: 13.4375em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
