@@ -1,9 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Email from "../../assets/email.svg";
+import User1 from "../../assets/Ellipse14.webp";
+import User2 from "../../assets/Ellipse15.webp";
+import User3 from "../../assets/Ellipse16.webp";
+import User4 from "../../assets/Ellipse17.webp";
+import User5 from "../../assets/Ellipse18.webp";
+import Img1 from "../../assets/Rectangle230.webp";
+import Img2 from "../../assets/Rectangle231.webp";
+import Img3 from "../../assets/Rectangle232.webp";
+import Img4 from "../../assets/Rectangle233.webp";
+import Img5 from "../../assets/Rectangle234.webp";
 import styles from "../../styles/home.module.css";
 import BlueArrow from "../../assets/blueArrow.svg";
 import Location from "../../assets/locationsvg.svg";
+import Product1 from "../../assets/Rectangle299.webp";
+import Product2 from "../../assets/Rectangle300.webp";
+import Product3 from "../../assets/Rectangle301.webp";
+import RightArrow from "../../assets/RightArrow.webp";
 
 export const Home = () => {
   const date = new Date();
@@ -20,12 +34,24 @@ export const Home = () => {
           images and captures seamlessly in one place. Register to get top
           access.
         </p>
+
         <div className={styles.carousel}>
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
+          <div id={styles.img1} style={{ paddingRight: 8 }}>
+            <img src={Img1} alt="placeholder" style={{ width: "100%" }} />
+          </div>
+
+          <div id={styles.img2} style={{ padding: 8 }}>
+            <img src={Img2} alt="placeholder" style={{ width: "100%" }} />
+          </div>
+          <div id={styles.img3} style={{ padding: 8 }}>
+            <img src={Img3} alt="placeholder" style={{ width: "100%" }} />
+          </div>
+          <div id={styles.img4} style={{ padding: 8 }}>
+            <img src={Img4} alt="placeholder" style={{ width: "100%" }} />
+          </div>
+          <div id={styles.img5} style={{ paddingLeft: 8 }}>
+            <img src={Img5} alt="placeholder" style={{ width: "100%" }} />
+          </div>
         </div>
       </section>
       {/* Products section */}
@@ -34,7 +60,7 @@ export const Home = () => {
         <hr />
         {/* First product */}
         <div className={styles.product}>
-          <img className={styles.product__img} src="" alt="" />
+          <img className={styles.product__img} src={Product1} alt="" />
           <div className={styles.product__details}>
             <h3>The Boolean Egyptian</h3>
             <p>
@@ -44,14 +70,36 @@ export const Home = () => {
             </p>
             <div className={styles.creators}>
               <ul className={styles.creators__imgs}>
-                <li className={styles.creator}></li>
-                <li className={styles.creator}></li>
-                <li className={styles.creator}></li>
-                <li className={styles.creator}></li>
-                <li className={styles.creator}></li>
+                <li
+                  className={styles.creator}
+                  style={{ backgroundImage: `url(${User1})` }}
+                ></li>
+                <li
+                  className={styles.creator}
+                  style={{ backgroundImage: `url(${User2})` }}
+                ></li>
+                <li
+                  className={styles.creator}
+                  style={{ backgroundImage: `url(${User3})` }}
+                ></li>
+                <li
+                  className={styles.creator}
+                  style={{ backgroundImage: `url(${User4})` }}
+                ></li>
+                <li
+                  className={styles.creator}
+                  style={{ backgroundImage: `url(${User5})` }}
+                ></li>
               </ul>
               <span id="num_of_creators">64 major creators</span>
-              <button className={styles.details__btn}></button>
+              <button
+                className={styles.details__btn}
+                style={{
+                  backgroundImage: `url(${RightArrow})`,
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
+                }}
+              ></button>
             </div>
           </div>
         </div>
@@ -69,24 +117,46 @@ export const Home = () => {
             </p>
             <div className={styles.creators}>
               <ul className={styles.creators__imgs}>
-                <li className={styles.creator}></li>
-                <li className={styles.creator}></li>
-                <li className={styles.creator}></li>
-                <li className={styles.creator}></li>
-                <li className={styles.creator}></li>
+                <li
+                  className={styles.creator}
+                  style={{ backgroundImage: `url(${User1})` }}
+                ></li>
+                <li
+                  className={styles.creator}
+                  style={{ backgroundImage: `url(${User2})` }}
+                ></li>
+                <li
+                  className={styles.creator}
+                  style={{ backgroundImage: `url(${User3})` }}
+                ></li>
+                <li
+                  className={styles.creator}
+                  style={{ backgroundImage: `url(${User4})` }}
+                ></li>
+                <li
+                  className={styles.creator}
+                  style={{ backgroundImage: `url(${User5})` }}
+                ></li>
               </ul>
               <span id="num_of_creators">64 major creators</span>
-              <button className={styles.details__btn}></button>
+              <button
+                className={styles.details__btn}
+                style={{
+                  backgroundImage: `url(${RightArrow})`,
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
+                }}
+              ></button>
             </div>
           </div>
-          <img className={styles.product__img} src="" alt="" />
+          <img className={styles.product__img} src={Product2} alt="" />
         </div>
 
         <hr />
 
         {/* Third product */}
         <div className={styles.product}>
-          <img className={styles.product__img} src="" alt="" />
+          <img className={styles.product__img} src={Product3} alt="" />
           <div className={styles.product__details}>
             <h3>The Boolean Egyptian</h3>
             <p>
@@ -96,14 +166,37 @@ export const Home = () => {
             </p>
             <div className={styles.creators}>
               <ul className={styles.creators__imgs}>
-                <li className={styles.creator}></li>
-                <li className={styles.creator}></li>
-                <li className={styles.creator}></li>
-                <li className={styles.creator}></li>
-                <li className={styles.creator}></li>
+                <li
+                  className={styles.creator}
+                  style={{ backgroundImage: `url(${User1})` }}
+                ></li>
+                <li
+                  className={styles.creator}
+                  style={{ backgroundImage: `url(${User2})` }}
+                ></li>
+                <li
+                  className={styles.creator}
+                  style={{ backgroundImage: `url(${User3})` }}
+                ></li>
+                <li
+                  className={styles.creator}
+                  style={{ backgroundImage: `url(${User4})` }}
+                ></li>
+                <li
+                  className={styles.creator}
+                  style={{ backgroundImage: `url(${User5})` }}
+                ></li>
               </ul>
               <span id="num_of_creators">64 major creators</span>
-              <button className={styles.details__btn}></button>
+              <button
+                className={styles.details__btn}
+                style={{
+                  backgroundImage: `url(${RightArrow})`,
+
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
+                }}
+              ></button>
             </div>
           </div>
         </div>
