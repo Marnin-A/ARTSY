@@ -330,9 +330,74 @@ hr {
   color: #333333;
 }
 .top__creators {
-  height: 100vh;
+  position: relative;
+  height: 57.625em;
   width: 100%;
-  background-color: #292929;
+  background-color: #e2e2e2;
+  margin-bottom: 8.75em;
+}
+.creator__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.creator__slider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.new__slider {
+  width: 0.625em;
+  height: 18.480625em;
+  background: #aeaeae;
+  border-radius: 3.125em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-right: 20%;
+}
+.slider__ball {
+  width: 0.625em;
+  height: 2.97em;
+  background: #292929;
+  border-radius: 3.125em;
+}
+.slider__item {
+  font-family: "Clash Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5em;
+  line-height: 155.5%;
+  color: #333333;
+}
+.creator__h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3.4375em;
+  line-height: 155.5%;
+  color: #161616;
+  width: 10.4375em;
+  font-family: Clash Display;
+  margin: 0%;
+}
+.creator__text {
+  position: absolute;
+  bottom: 17%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Clash Display";
+  font-weight: 200;
+  font-size: 2em;
+  line-height: 130%;
+  width: 35.75em;
+}
+.top__creator {
+  position: absolute;
+  width: 57.36%;
+  height: 83.57%;
+  bottom: 0%;
+  right: 11.875em;
 }
 footer {
   width: 100%;

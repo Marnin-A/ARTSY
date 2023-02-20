@@ -6,6 +6,7 @@ import User2 from "../../assets/Ellipse15.webp";
 import User3 from "../../assets/Ellipse16.webp";
 import User4 from "../../assets/Ellipse17.webp";
 import User5 from "../../assets/Ellipse18.webp";
+import CreatorImg from "../../assets/Rectangle299.png";
 import Img1 from "../../assets/Rectangle230.webp";
 import Img2 from "../../assets/Rectangle231.webp";
 import Img3 from "../../assets/Rectangle232.webp";
@@ -261,7 +262,34 @@ export const Home = () => {
         </div>
       </section>
       {/* Top Creators Section */}
-      <section className={styles.top__creators}></section>
+      <section className={styles.top__creators}>
+        <div style={{ padding: " 5.5em 5.5em 0em 5.5em" }}>
+          <div className={styles.creator__top}>
+            <h1 className={styles.creator__h1}>TOP CREATORS OF THE WEEK</h1>
+            <div className={styles.creator__slider}>
+              <div className={styles.new__slider}>
+                <div className={styles.slider__ball}></div>
+              </div>
+              <div style={{ display: "flex", flexDirection: "column" }}>
+                <span className={styles.slider__item}>Editorials</span>
+                <span className={styles.slider__item}>Fashion</span>
+                <span className={styles.slider__item}>Lifestyle</span>
+                <span className={styles.slider__item}>Blueprint</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.creator__text}>
+          “Everything always looked better in black and white. Everything always
+          as if it were the first time; there's always more people in a black
+          and white photograph. It just makes it seem that there were more
+          people at a gig, more people at a football match, than with colour
+          photography. Everything looks more exciting.”– Jack Lowden
+        </div>
+        <div className={styles.top__creator}>
+          <img src={CreatorImg} alt="" />
+        </div>
+      </section>
       <footer>
         <div className={styles.newsletter}>
           <h2 className={styles.newsletter__header}>NEWSLETTER</h2>
