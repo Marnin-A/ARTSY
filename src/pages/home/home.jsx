@@ -108,7 +108,7 @@ export const Home = () => {
         <hr />
 
         {/* Second product */}
-        <div className={styles.product}>
+        <div className={styles.product} id={styles.product2}>
           <div className={styles.product__details}>
             <h3>The Boolean Egyptian</h3>
             <p>
@@ -236,10 +236,19 @@ export const Home = () => {
           </div>
         </div>
         <div className={styles.slider__controls}>
-          <input className={styles.slider} type="range" />
+          {/* <input className={styles.slider} type="range" /> */}
+          <div className={styles.slider}>
+            <div className={styles.slider__ball1}></div>
+          </div>
           <span className={styles.slider__btns}>
-            <button className={styles.slider__btn}></button>
-            <button className={styles.slider__btn}></button>
+            <button
+              className={styles.slider__btn}
+              id={styles.slider__btn1}
+            ></button>
+            <button
+              className={styles.slider__btn}
+              id={styles.slider__btn2}
+            ></button>
           </span>
         </div>
       </section>
