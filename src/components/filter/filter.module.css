@@ -1,5 +1,5 @@
 .filter {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,25 +9,107 @@
   flex-direction: row;
   align-items: center;
   width: 13.4375em;
-  height: 2em;
+  height: 3.75em;
   border-radius: 0.5em;
   background: #f4f2f2;
+  font-weight: 500;
+}
+#search_icon {
+  width: 1.5em;
+  height: 2em;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0 1em 0 1em;
 }
 #search {
-  height: 2em;
   border: none;
   outline: none;
   background: #f4f2f2;
   width: 70%;
+  font-weight: 500;
+  font-size: 1.5em;
+  line-height: 2em;
 }
 
 #filter_img {
   width: 1em;
 }
-.categories {
-  margin-top: 15%;
-  width: 13.4375em;
+.filter_section {
+  width: 14.4375em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.filter_section > h3 {
+  font-weight: 500;
+  font-size: 1.75em;
+  line-height: 157.6%;
+}
+.toggle {
+  width: min-content;
+  background: none;
+  outline: none;
+  border: none;
+}
+.checkBox {
+  appearance: none;
+  background-color: #d9d9d9;
+  border-radius: 0.3125em;
+  margin: 0;
+  margin-right: 5%;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: none;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+.checkBox::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #000000;
+  background-color: CanvasText;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+.checkBox:checked::before {
+  transform: scale(1);
+}
+.checkLabel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #292929;
+  margin-bottom: 1.25em;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 2em;
+}
+.costs {
+  display: flex;
+  flex-direction: column;
+}
+.cost {
+  text-align: left;
+  background: none;
+  border: none;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 2em;
+  color: #292929;
+  border-radius: 0.5em;
+}
+.cost:hover {
+  background-color: #d9d9d9;
 }
