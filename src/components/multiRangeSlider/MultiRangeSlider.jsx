@@ -44,8 +44,8 @@ const MultiRangeSlider = ({ min, max, onChange }) => {
   return (
     <div className="main-container">
       <div className="slider__top">
-        <span className="slider__left-value">${minVal / 100} - </span>
-        <span className="slider__right-value">${maxVal / 100}</span>
+        <span className="slider__left-value">${minVal / 100}-</span>
+        <span className="slider__right-value"> ${maxVal / 100}</span>
       </div>
       <div className="container">
         <input
